@@ -1,7 +1,12 @@
 from sklearn.base import BaseEstimator, ClusterMixin
 from sklearn.neighbors import KNeighborsTransformer
 from collections import deque
-from ..utils import get_sparse_row
+
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+from utils import get_sparse_row
 import numpy as np
 
 
